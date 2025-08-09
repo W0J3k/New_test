@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "myinfo_pro_backend"
+version = "0.1.0"
+description = "Backend for MyInfo_pro"
+authors = ["Auto Dev <dev@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = {extras=["standard"], version="^0.29.0"}
+sqlalchemy = "^2.0"
+psycopg2-binary = "^2.9"
+pydantic = "^2.6"
+feedparser = "^6.0"
+playwright = "^1.42"
+readability-lxml = "^0.8"
+praw = "^7.7"
+telethon = "^1.34"
+redis = "^5.0"
+rq = "^1.15"
+langdetect = "^1.0"
+sentence-transformers = "^2.2"
+pgvector = "^0.2"
+python-dotenv = "^1.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3"
+ruff = "^0.3"
+mypy = "^1.8"
+pytest = "^8.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
